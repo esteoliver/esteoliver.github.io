@@ -1,12 +1,20 @@
 <html ng-app="esteoliverApp">
   <head>
-    <link rel="stylesheet" href="assets/uikit/css/uikit.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
-    <link href="assets/styles/main.css" rel="stylesheet"/>
-  </head>
-  <body ng-controller="MainCtrl" class="uk-flex uk-background-blend-multiply uk-background-cover">
 
-    <div id="professional-info" class="uk-flex-1" ng-hide="!showProfessional">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+
+    <!--build:css assets/styles/components.min.css -->
+    <link rel="stylesheet" href="assets/styles/uikit.min.css" />
+    <!-- endbuild -->
+
+    <!--build:css assets/styles/main.min.css -->
+    <link href="assets/styles/main.css" rel="stylesheet"/>
+    <!-- endbuild -->
+  </head>
+  <body ng-controller="MainCtrl" class="uk-flex uk-background-blend-multiply uk-background-cover" style="background-image: url('assets/images/{{ bgImage }}.jpg');">
+
+    <!-- PROFESSIONAL INFORMATION -->
+    <div id="professional-info" class="uk-flex-1 ng-hide" ng-hide="!showProfessional">
       <div id="diagonal" class="left"></div>
     </div>
 
@@ -55,15 +63,22 @@
       </div>
     </div>
 
-    <div id="personal-info" class="uk-background-muted uk-flex-1" ng-hide="!showPersonal">
+
+    <!-- PERSONAL INFORMATION -->
+    <div id="personal-info" class="uk-flex-1 ng-hide" ng-hide="!showPersonal">
       <div id="diagonal" class="right"></div>
     </div>
 
+    <!--build:js assets/scripts/components.min.js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="assets/uikit/js/uikit.min.js"></script>
-    <script src="assets/uikit/js/uikit-icons.min.js"></script>
+    <script src="assets/scripts/uikit.min.js"></script>
+    <script src="assets/scripts/uikit-icons.min.js"></script>
+    <!-- endbuild -->
+
+    <!--build:js assets/scripts/main.min.js -->
+    <script src="assets/scripts/main.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
