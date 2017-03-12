@@ -1,0 +1,128 @@
+$bg-color-primary: #b61924;
+$bg-color-secondary: #151516;
+
+body {
+  // background: $bg-color-primary;
+  background-color: $bg-color-secondary;
+  background-image: url('../img/caracas.jpg');
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#intro {
+  z-index: 10;
+  overflow: hidden;
+  background: transparent;
+
+  .logo {
+    text-align: center;
+  }
+
+  .title {
+    background-color: #c0392b;
+    display: inline-block;
+    border: 2px solid white;
+    text-align: right;
+    height: 123px;
+    width: 123px;
+    box-sizing: border-box;
+    padding: 25px 0 10px 4px;
+
+    span {
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: block;
+      font-size: 20px;
+      letter-spacing: 11px;
+
+      &.name { direction: rtl; }
+    }
+  }
+}
+
+#professional-info {
+  position: relative;
+}
+
+#personal-info {
+  position: relative;
+}
+
+#diagonal {
+  position: absolute;
+  width: 130%;
+  height: 100%;
+  background: white;
+  z-index: 8;
+  left: 0;
+  transition: left 0.5s;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.left {
+    left: -20%;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+  }
+
+  &.right {
+    left: -17%;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+  }
+}
+
+#cover {
+  position: relative;
+  z-index: 8;
+  text-align: center;
+
+  h5 {
+    display: inline-block;
+  }
+
+  hr {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .left, &.left {
+    text-align: left;
+  }
+
+  .right, &.right {
+    text-align: right;
+  }
+}
+
+#social-media {
+  padding: 0px !important;
+  transition: 1s;
+
+  a {
+    &:hover {
+      color: $bg-color-primary;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+#sections {
+  button {
+    background: transparent;
+  }
+}

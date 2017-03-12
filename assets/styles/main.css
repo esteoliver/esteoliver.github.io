@@ -1,0 +1,87 @@
+body {
+  background-color: #151516;
+  background-image: url("../img/caracas.jpg");
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono', monospace; }
+
+#intro {
+  z-index: 10;
+  overflow: hidden;
+  background: transparent; }
+  #intro .logo {
+    text-align: center; }
+  #intro .title {
+    background-color: #c0392b;
+    display: inline-block;
+    border: 2px solid white;
+    text-align: right;
+    height: 123px;
+    width: 123px;
+    box-sizing: border-box;
+    padding: 25px 0 10px 4px; }
+    #intro .title span {
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: block;
+      font-size: 20px;
+      letter-spacing: 11px; }
+      #intro .title span.name {
+        direction: rtl; }
+
+#professional-info {
+  position: relative; }
+
+#personal-info {
+  position: relative; }
+
+#diagonal {
+  position: absolute;
+  width: 130%;
+  height: 100%;
+  background: white;
+  z-index: 8;
+  left: 0;
+  transition: left 0.5s; }
+  #diagonal.full {
+    width: 100%; }
+  #diagonal.left {
+    left: -20%;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg); }
+  #diagonal.right {
+    left: -17%;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg); }
+
+#cover {
+  position: relative;
+  z-index: 8;
+  text-align: center; }
+  #cover h5 {
+    display: inline-block; }
+  #cover hr {
+    display: inline-block;
+    width: 50%; }
+  #cover .left, #cover.left {
+    text-align: left; }
+  #cover .right, #cover.right {
+    text-align: right; }
+
+#social-media {
+  padding: 0px !important;
+  transition: 1s; }
+  #social-media a:hover {
+    color: #b61924; }
+  #social-media a:not(:last-child) {
+    margin-right: 10px; }
+
+#sections button {
+  background: transparent; }

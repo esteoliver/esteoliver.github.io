@@ -1,0 +1,12 @@
+{
+  "name": "esteoliver-landingpage",
+  "version": "0.0.1",
+  "description": "Personal landing page",
+  "author": "Esteban José Oliveros De Freitas  <esteban.jof@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
