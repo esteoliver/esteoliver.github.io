@@ -13,17 +13,12 @@
   </head>
   <body ng-controller="MainCtrl" class="uk-flex uk-background-blend-multiply uk-background-cover" style="background-image: url('assets/images/{{ bgImage }}.jpg');">
 
-    <!-- PROFESSIONAL INFORMATION -->
-    <div id="professional-info" class="uk-flex-1 ng-hide" ng-hide="!showProfessional">
-      <div id="diagonal" class="left"></div>
-    </div>
-
     <div id="intro" class="uk-flex-1">
 
-      <div id="cover" class="uk-padding-large uk-light" ng-class="{'left': showPersonal, 'right': showProfessional}">
+      <div id="cover" class="uk-padding-large uk-light">
 
         <!-- LOGO -->
-        <div class="logo uk-margin-medium-bottom" ng-class="{'left': showPersonal, 'right': showProfessional}">
+        <div class="logo uk-margin-medium-bottom">
           <div class="title">
             <span class="name">Esteban</span>
             <span class="lastname">Oliveros</span>
@@ -31,17 +26,17 @@
         </div>
 
         <!-- SUBTITLE -->
-        <div ng-class="{'left': showPersonal, 'right': showProfessional}">
-          <h5 ng-hide="showPersonal">Full-Stack Web Developer</h5>
+        <div>
+          <h5>Full-Stack Web Developer</h5>
           <h5>|</h5>
-          <h5 ng-hide="showProfessional">Also known as EsteBandido</h5>
+          <h5>Also known as EsteBandido</h5>
         </div>
 
         <hr/>
 
         <!-- SOCIAL MEDIA -->
-        <div id="social-media" class="uk-margin-large-bottom" ng-class="{'left': showPersonal, 'right': showProfessional}">
-          <a  href="https://github.com/esteoliver" uk-icon="icon: github-alt"></a>
+        <div id="social-media" class="uk-margin-large-bottom">
+          <a href="https://github.com/esteoliver" uk-icon="icon: github-alt"></a>
           <a href="" uk-icon="icon: google"></a>
           <a href="https://twitter.com/EsteOliver?lang=es" uk-icon="icon: twitter"></a>
           <a href="https://www.linkedin.com/in/esteoliver/" uk-icon="icon: linkedin"></a>
@@ -49,7 +44,7 @@
           <a href="https://esteoliver.wordpress.com/" uk-icon="icon: wordpress"></a>
         </div>
 
-        <div id="sections" ng-class="{'left': showPersonal, 'right': showProfessional}">
+        <div id="sections">
           <button class="uk-button" ng-click="toggleProfessional()">
             <span uk-icon="icon: chevron-left"></span>
             Professional
@@ -61,12 +56,6 @@
         </div>
 
       </div>
-    </div>
-
-
-    <!-- PERSONAL INFORMATION -->
-    <div id="personal-info" class="uk-flex-1 ng-hide" ng-hide="!showPersonal">
-      <div id="diagonal" class="right"></div>
     </div>
 
     <!--build:js assets/scripts/components.min.js -->
