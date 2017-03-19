@@ -1,108 +1,57 @@
-$bg-color-primary: #b61924;
 $bg-color-secondary: #151516;
+$color-primary: #c0392b;
 
 body {
   // background: $bg-color-primary;
-  background-color: $bg-color-secondary;
   height: 100vh;
   margin: 0px;
   overflow: hidden;
-  font-family: 'Roboto Mono', monospace;
-  transition: background-image 2.5s ease-in-out;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
 }
 
 #intro {
-  z-index: 10;
-  overflow: hidden;
-  background: transparent;
+  background-image: url('../images/caracas.jpg');
+  background-color: $bg-color-secondary;
 
-  .logo {
-    text-align: center;
-  }
-
-  .title {
-    background-color: #c0392b;
-    display: inline-block;
-    border: 2px solid white;
-    text-align: right;
-    height: 123px;
-    width: 123px;
-    box-sizing: border-box;
-    padding: 25px 0 10px 4px;
-
-    span {
-      color: white;
-      font-weight: 300;
-      text-transform: uppercase;
-      display: block;
-      font-size: 20px;
-      letter-spacing: 11px;
-
-      &.name { direction: rtl; }
-    }
-  }
-}
-
-#professional-info {
-  position: relative;
-}
-
-#personal-info {
-  position: relative;
-}
-
-#diagonal {
-  position: absolute;
-  width: 130%;
-  height: 100%;
-  background: white;
-  z-index: 8;
-  left: 0;
-  transition: left 0.5s;
-
-  &.full {
-    width: 100%;
-  }
-
-  &.left {
-    left: -20%;
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
-  }
-
-  &.right {
-    left: -17%;
-    -webkit-transform: skew(-20deg);
-    -moz-transform: skew(-20deg);
-    -o-transform: skew(-20deg);
-  }
 }
 
 #cover {
-  position: relative;
-  z-index: 8;
-  text-align: center;
+  // text-align: center;
+  height: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
 
-  h5 {
-    display: inline-block;
+  .name {
+    margin-bottom: 0px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    font-size: 2em;
   }
 
-  hr {
-    display: inline-block;
-    width: 50%;
+  .last-name {
+    margin-top: 0px;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 5.5em;
+    line-height: 0.8em;
+    letter-spacing: 5px;
   }
 
-  .left, &.left {
-    text-align: left;
+  .subtitle {
+    color: $color-primary;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 300;
   }
 
-  .right, &.right {
-    text-align: right;
+  .bio {
+    text-align: justify;
+    font-weight: 100;
+    color: white;
   }
 }
 
@@ -111,8 +60,9 @@ h1, h2, h3, h4, h5 {
   transition: 1s;
 
   a {
+
     &:hover {
-      color: $bg-color-primary;
+      color: $color-primary;
     }
 
     &:not(:last-child) {
@@ -121,8 +71,6 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#sections {
-  button {
-    background: transparent;
-  }
+#info {
+  display: none;
 }
