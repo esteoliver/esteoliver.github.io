@@ -8,12 +8,24 @@ body {
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
+  /* -webkit-filter: blur(1px);
+     -moz-filter: blur(1px);
+     -o-filter: blur(1px);
+     -ms-filter: blur(1px);
+     filter: blur(1px); */
 }
 
 #intro {
   background-image: url('../images/caracas.jpg');
   background-color: $bg-color-secondary;
+  transition: 1s;
+  position: relative;
+  left: 0;
+  z-index: 10;
 
+  &.left {
+    left: -75%;
+  }
 }
 
 #cover {
@@ -52,10 +64,12 @@ body {
     text-align: justify;
     font-weight: 100;
     color: white;
+
+    a { color: $color-primary; }
   }
 }
 
-#social-media {
+.social-media {
   padding: 0px !important;
   transition: 1s;
 
@@ -71,6 +85,121 @@ body {
   }
 }
 
+#info-menu {
+  height: 100%;
+  max-width: 25%;
+  width: 25%;
+  box-sizing: border-box;
+  opacity: 1;
+
+  #profile-pic {
+    background-image: url('../images/profile-pic.jpg');
+    background-color: #000;
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #ACACAC;
+  }
+
+  .profile-border {
+    border: 5px solid black;
+    border-radius: 50%;
+
+    > .profile-border {
+      border-color: #272727;
+    }
+  }
+
+  #menu {
+    width: 100%;
+
+    .uk-nav-header {
+      color: $color-primary;
+    }
+  }
+}
+
 #info {
-  display: none;
+  z-index: 8;
+  overflow: auto;
+  max-height: 100%;
+  width: 75%;
+  box-sizing: border-box;
+  left: 25%;
+
+  .uk-heading-line {
+    font-family: 'Roboto Mono', monospace;
+    color: #03030B;
+
+    & > ::after, & > ::before {
+      border-bottom: 3px solid rgba(#03030B, 0.5);
+    }
+  }
+
+  .subtitle > a {
+    font-family: 'Roboto Mono', monospace;
+    display: block;
+    margin-left: -25px;
+    text-decoration: none;
+    color: #03030B;
+
+    &::before {
+      content: "#";
+      width: 25px;
+      float: left;
+      color: #03030B;
+    }
+  }
+}
+
+.info-box {
+
+  .company {
+    margin: 0px;
+  }
+
+  .company-rol {
+    margin: 0px;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .media-title {
+    height: 40px;
+  }
+
+  hr {
+    margin-top: 5px;
+    border-color: $color-primary;
+  }
+}
+
+.courses {
+
+  .uk-badge {
+    font-size: 10px;
+  }
+}
+
+.tech {
+  padding: 20px;
+  height: 100px;
+
+  &:hover {
+
+    > img {
+      filter: none;
+    }
+  }
+
+
+  > img {
+    // height: 100px;
+    max-height: 100%;
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+  }
 }

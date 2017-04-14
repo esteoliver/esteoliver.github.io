@@ -12,9 +12,9 @@
     <link href="assets/styles/main.css" rel="stylesheet"/>
     <!-- endbuild -->
   </head>
-  <body ng-controller="MainCtrl" class="uk-flex">
+  <body ng-controller="MainCtrl" class="uk-flex" ng-init="showInfo = true">
 
-    <div id="intro" class="uk-flex uk-flex-1 uk-background-blend-multiply uk-background-cover">
+    <div id="intro" class="uk-flex uk-flex-between uk-flex-1 uk-background-blend-multiply uk-background-cover" ng-class="{'left': showInfo}">
 
       <div id="cover" class="uk-padding-large uk-light uk-flex uk-flex-column">
         <!-- LOGO -->
@@ -36,29 +36,68 @@
           <p>
             I love my job and I enjoy the experience of making ideas come true.
           </p>
+          <a href="#" class="uk-text-bold" ng-click="showInfo = true" uk-icon="icon: chevron-right;">Know more</a>
         </div>
 
         <hr/>
 
         <!-- SOCIAL MEDIA -->
-        <div id="social-media">
-          <a href="https://github.com/esteoliver" uk-icon="icon: github-alt"></a>
-          <a href="" uk-icon="icon: google"></a>
-          <a href="https://twitter.com/EsteOliver?lang=es" uk-icon="icon: twitter"></a>
-          <a href="https://www.linkedin.com/in/esteoliver/" uk-icon="icon: linkedin"></a>
-          <a href="https://www.instagram.com/" uk-icon="icon: instagram"></a>
-          <a href="https://esteoliver.wordpress.com/" uk-icon="icon: wordpress"></a>
+        <div class="social-media">
+          <a href="https://github.com/esteoliver" target="blank" uk-icon="icon: github-alt"></a>
+          <a href="" target="blank" uk-icon="icon: google"></a>
+          <a href="https://twitter.com/EsteOliver?lang=es" target="blank" uk-icon="icon: twitter"></a>
+          <a href="https://www.linkedin.com/in/esteoliver/" target="blank" uk-icon="icon: linkedin"></a>
+          <a href="https://www.instagram.com/" target="blank" uk-icon="icon: instagram"></a>
+          <a href="https://esteoliver.wordpress.com/" target="blank" uk-icon="icon: wordpress"></a>
         </div>
       </div>
 
-      <div id="info">
-        Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam euismod tellus id erat.
+      <div id="info-menu" class="uk-flex uk-flex-column uk-flex-middle uk-light uk-padding-large ng-hide" ng-show="showInfo">
+
+        <div class="profile-border uk-margin-bottom">
+          <div class="profile-border">
+            <div id="profile-pic" class="uk-background-cover uk-background-blend-luminosity" ng-click="showInfo = false"></div>
+          </div>
+        </div>
+
+        <ul id="menu" class="uk-nav uk-nav-default uk-flex uk-flex-column uk-flex-1" uk-scrollspy-nav="closest: li; scroll: true">
+          <li class="uk-nav-header">Professional</li>
+          <li><a href="#experience" uk-scroll>Experience</a></li>
+          <li><a href="#projects" uk-scroll>Projects</a></li>
+          <li><a href="#education" uk-scroll>Education</a></li>
+          <li><a href="#technologies" uk-scroll>Technologies</a></li>
+
+          <li class="uk-nav-header">Personal</li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+          <li class="uk-flex-1"></li>
+          <li class="uk-nav-divider uk-margin-bottom"></li>
+          <div class="social-media uk-text-center">
+            <a href="https://github.com/esteoliver" target="blank" uk-icon="icon: github-alt"></a>
+            <a href="" target="blank" uk-icon="icon: google"></a>
+            <a href="https://twitter.com/EsteOliver?lang=es" target="blank" uk-icon="icon: twitter"></a>
+            <a href="https://www.linkedin.com/in/esteoliver/" target="blank" uk-icon="icon: linkedin"></a>
+            <a href="https://www.instagram.com/" target="blank" uk-icon="icon: instagram"></a>
+            <a href="https://esteoliver.wordpress.com/" target="blank" uk-icon="icon: wordpress"></a>
+          </div>
+
+        </ul>
+
       </div>
+    </div>
+
+    <div id="info" class="uk-position-absolute uk-padding-large">
+
+      <div ng-include="'views/professional.html'"></div>
+
+      <div ng-include="'views/personal.html'"></div>
+
     </div>
 
     <!--build:js assets/scripts/components.min.js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="assets/scripts/uikit.min.js"></script>
     <script src="assets/scripts/uikit-icons.min.js"></script>
