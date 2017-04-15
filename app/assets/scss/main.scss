@@ -65,7 +65,13 @@ body {
     font-weight: 100;
     color: white;
 
-    a { color: $color-primary; }
+    button {
+      color: $color-primary;
+
+      &::before {
+        border-color: $color-primary;
+      }
+    }
   }
 }
 
@@ -155,11 +161,11 @@ body {
 
 .info-box {
 
-  .company {
+  .title {
     margin: 0px;
   }
 
-  .company-rol {
+  .subtitle {
     margin: 0px;
     color: #666;
     font-size: 12px;
@@ -173,6 +179,10 @@ body {
     margin-top: 5px;
     border-color: $color-primary;
   }
+
+  p {
+    max-height: 200px;
+  }
 }
 
 .courses {
@@ -180,6 +190,11 @@ body {
   .uk-badge {
     font-size: 10px;
   }
+}
+
+.uk-card.company {
+  margin-top: -40px;
+  margin-bottom: -40px;
 }
 
 .tech {
@@ -201,5 +216,72 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 
+  }
+}
+
+.uk-section {
+  margin-left: -70px;
+  margin-right: -70px;
+}
+
+.uk-card {
+  span[uk-icon] {
+    color: $color-primary;
+  }
+
+  .uk-card-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+.company {
+
+  h5 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-primary;
+  }
+}
+
+
+#tc-logo {
+  background-color: #136083;
+  text-align: center;
+
+  img {
+    height: 30px;
+  }
+}
+
+#addo-logo {
+  background-color: #000;
+  text-align: center;
+
+  img {
+    height: 40px;
+  }
+}
+
+#latch-logo {
+  background-color: #ede2e2;
+  text-align: center;
+
+  img {
+    height: 30px;
+  }
+}
+
+#intraffic-logo {
+  background-color: #d4dbe0;
+  text-align: center;
+
+  img {
+    height: 40px;
+  }
+}
+
+.uk-tab {
+  .uk-active > a {
+    border-color: $color-primary;
   }
 }

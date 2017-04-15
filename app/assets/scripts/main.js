@@ -129,11 +129,6 @@ app.controller('TechCtrl', [
           img: 'assets/images/techs/oracle.png',
         },
         {
-          name: 'MySQL',
-          level: 'Basic',
-          img: 'assets/images/techs/mysql.png',
-        },
-        {
           name: 'MongoDB',
           level: 'Basic',
           img: 'assets/images/techs/mongo.jpg',
@@ -142,6 +137,11 @@ app.controller('TechCtrl', [
           name: 'neo4j',
           level: 'Basic',
           img: 'assets/images/techs/neo4j.png',
+        },
+        {
+          name: 'MySQL',
+          level: 'Basic',
+          img: 'assets/images/techs/mysql.png',
         }
       ],
 
@@ -177,6 +177,11 @@ app.controller('TechCtrl', [
           name: 'OpenShift',
           level: 'Basic',
           img: 'assets/images/techs/openshift.png',
+        },
+        {
+          name: 'Postman',
+          level: 'Basic',
+          img: 'assets/images/techs/postman.png',
         }
       ]
 

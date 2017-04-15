@@ -1,4 +1,4 @@
-<h3 class="subtitle" id="technologies"><a href="#technologies" uk-scroll>Technologies</a></h3>
+<h3 class="subtitle"><a href="#technologies" uk-scroll>Technologies</a></h3>
 
 <div class="uk-flex" ng-controller="TechCtrl">
   <div>
@@ -27,14 +27,14 @@
       </div>
 
       <!-- DB -->
-      <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
+      <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
         <div ng-repeat="tech in tech.db" class="tech" title="{{ tech.name }} - {{ tech.level }}" uk-tooltip="offset: -15">
           <img alt="" ng-src="{{ tech.img }}"/>
         </div>
       </div>
 
       <!-- OTHERS -->
-      <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
+      <div class="uk-child-width-1-4@s uk-grid-collapse uk-text-center" uk-grid>
         <div ng-repeat="tech in tech.others" class="tech" title="{{ tech.name }} - {{ tech.level }}" uk-tooltip="offset: -15">
           <img alt="" ng-src="{{ tech.img }}"/>
         </div>
