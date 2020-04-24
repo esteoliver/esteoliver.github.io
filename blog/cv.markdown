@@ -1,0 +1,13 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+---
+
+Talented Software Engineer, with the capacities of working under high pressure environments, problem solving and communication.
+
+
++4 years developing SaaS, CRM and APIs, with experience in different languages (Ruby, Python, JS) and techonologies
+Knowledge of good software practices, design patterns and systems architecture
+Experience with Agile methodologies and teams
++2 years experience as Team Leader  
