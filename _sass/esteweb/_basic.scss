@@ -1,20 +1,10 @@
-.rm-margin {
-  margin: 0;
+// POSITIONING ----------------------
+
+.position-relative {
+  position: relative;
 }
 
 // TEXT -----------------------------
-
-.tx-right {
-  text-align: right;
-}
-
-.tx-left {
-  text-align: left;
-}
-
-.tx-center {
-  text-align: center;
-}
 
 h1.big {
   font-size: 3rem;
@@ -33,35 +23,4 @@ $btn-bg-color: #3F53D9;
 
 a.btn {
   text-decoration: none;
-}
-
-// BLOBS ----------------------------
-.blob-container {
-  position: relative;
-  min-height: 30vmax;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 30px 0;
-  
-  .blob {
-    position: absolute;
-    width: 30vmax;
-    z-index: -1;
-    // animation: move 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-
-  .blob-1 {
-    top: 0;
-    right: -30%;
-    fill: #FCB900;
-  }
-
-  .blob-2 {
-    top: 0;
-    left: -30%;
-    fill: #FF80AA;
-    transform: rotate(-20deg) scale(0.8, 1);
-  }
 }

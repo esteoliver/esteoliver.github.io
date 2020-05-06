@@ -2,56 +2,111 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home p-4 position-relative">
 
-  <header>
-    <div class="landing">
-      <img src="/assets/img/landing-1.svg" alt="">
+  <!-- <div class="blob blob-2">
+    <svg width="2000" height="2000" viewBox="0 0 2000 2000" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(600, -100) scale(5) rotate(220 0 0)">
+        <path d="M117.1,-154.7C133,-126.1,114.3,-71.5,103.3,-33.1C92.3,5.3,89,27.4,81.6,53.5C74.1,79.7,62.6,109.8,35.9,135.6C9.2,161.3,-32.5,182.6,-66.7,174.1C-100.9,165.6,-127.5,127.3,-162.4,85C-197.3,42.7,-240.5,-3.7,-222.8,-28.1C-205.2,-52.5,-126.7,-55,-79.4,-78C-32.1,-101,-16.1,-144.5,17.2,-165C50.6,-185.6,101.1,-183.2,117.1,-154.7Z" stroke="none" stroke-width="0"></path>
+      </g>
+    </svg>
+  </div>
+    
+  <div class="blob blob-1">
+    <svg width="2000" height="2000" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+      <path transform="translate(700, 150) scale(2)" d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+    </svg>
+  </div> -->
 
-      <h2 class="rm-margin">Hi there!</h2>
-      <h1 class="big rm-margin">I'm Esteban :)</h1>
+  <!-- <div class="blob blob-3">
+    <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+      <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+      </svg>  
+  </div> -->
+
+  <div class="avatar d-none d-md-block"></div>
+
+  <div class="px-4 px-md-5 mb-5">
+    <h2 class="px-md-5 mb-0">Hi there!</h2>
+    <h1 class="px-md-5 big mt-0 mb-2">I'm Esteban :)</h1>
+
+    <p class="px-md-5">
+      A pragmatic software engineer and creative developer, 
+      <br class="d-none d-md-inline">
+      currently working at <a href="https://www.globallogic.com" target="blank">GlobalLogic</a>.
+    </p>
+
+    <p class="px-md-5">
+      I had worked as a developer since 2016, mainly using RoR <br class="d-none d-md-inline">
+      and NodeJs. I enjoy the process of building a modern world <br class="d-none d-md-inline">
+      through code.
+    </p>
+
+    <a class="btn ml-md-5  text-center mt-4" href="/cv">Take a look at my CV</a>  
+  </div>
+
+
+  <div class="about-me mx-auto">
+    <div class="px-4 px-md-0  mx-auto d-flex flex-column">
+
+      <div class="info py-md-4 ">
+        <h1 class="px-md-5 big tx-left">
+          Much more than just<br class="d-none d-md-inline"/> a developer
+        </h1>
   
-      <p>Pragmatic software engineer that believes coding is a creative process.</p>
-      <p>
-        It involves logical processes and the creation of new structures, 
-        but at the end of the day it is you, and your own capacity of thinking outside the box that will let you 
-        achieve your goals.
-      </p>
-  
-      <br><br>
-
-      <a class="btn" href="/cv">Take a look at my CV</a>  
-    </div>
-
-    <br>
-
-    <div class="blob-container">
-      <div class="blob blob-2">
-        <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
-        <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
-        </svg>
+        <p class="px-md-5 tx-left">
+          I'm always improving my not-so-softs softskills, because a project is not only
+          about code, is about the people that writes that code.
+          <br><br>
+          I have had the opportunity to lead and coach great teams. <br class="d-none d-md-inline">
+          I learned a lot from them: how to communicate, solve conflict,
+          and menthor new developers into their path careers.
+        </p>  
       </div>
   
-      <h1 class="big tx-left">Much more than just  <br/> a developer...</h1>
-
-      <p class="tx-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati magni architecto, exercitationem dignissimos pariatur maiores ab voluptatum quas voluptatibus! Harum minus inventore deleniti nulla obcaecati commodi nobis, doloremque minima.</p>      
-    </div>
-
-    <div class="blob-container">
-      <div class="blob blob-1">
-        <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
-        <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
-        <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
-        </svg>
+      <div class="info py-md-4  align-self-md-end">
+        <h1 class="px-md-5 big text-md-right">I'm a seeker of knowledge</h1>
+  
+        <p class="px-md-5 text-md-right">
+          I love to learn more. <br><br>
+    
+          Software is always evolving, so as a software engineer/developer I can't stay behind.
+          Although my experience is limited to <b>Ruby</b> and <b>JavaScript</b>, I try not<br>
+          to be entangled to just one language or one technology. <br><br>
+    
+          I'm currently learning <b>Python</b>, <b>GoLang</b> and <b>Big Data</b>.
+        </p>  
       </div>
   
-      <h1 class="big tx-right">Much more than just  <br/> a developer...</h1>
+      <div class="info py-md-4 ">
+        <h1 class="px-md-5 big text-left">Working intelligently</h1>
+  
+        <p class="px-md-5 text-left">
+          I value my time, and that's why when I'm solving a problem, I'm not just 
+          trying to fix it, I'm also trying to understand and learn. This generates
+          more value over time, and much less effort.<br><br>
+          I'm not a hard worker. When facing a problem, I'm smart and creative.
+        </p>  
+      </div>
+  
+      <div class="info py-md-4  align-self-md-end">
+        <h1 class="px-md-5 big text-md-right">... And I'm just a human.</h1>
+  
+        <p class="px-md-5 text-md-right">
+          People tens to forget that we are just humans, after all (8). Every day I 
+          work with people, not machines. This is a very important feature for my team
+          and workplace.<br><br>
+          Beyond being a developer, I'm a Venezuelan man, born in a curious date <br>
+          (December 24), married to an amazing woman and father of a cat. <br>
+          I love playing games, watch a lot of movies and cook. <br><br>
+    
+          And much more than that...
+        </p>  
+      </div>
+    </div>  
+  </div>
 
-      <p class="tx-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus obcaecati magni architecto, exercitationem dignissimos pariatur maiores ab voluptatum quas voluptatibus! Harum minus inventore deleniti nulla obcaecati commodi nobis, doloremque minima.</p>      
-    </div>
 
-  </header>
   <!-- {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%} -->

@@ -1,0 +1,68 @@
+I"�<h4 id="investigate">Investigate:</h4>
+<ul>
+  <li>Word count</li>
+  <li>Apps: Tableau, SPSS, JASP</li>
+  <li>Math: Big O, Probability, Bayes’ Theorem</li>
+  <li>DaaS: Data as a Service</li>
+</ul>
+
+<h4 id="learn">Learn:</h4>
+<ul>
+  <li>Python</li>
+  <li>Visualization</li>
+  <li>Machine Learning</li>
+  <li>Data sourcing</li>
+</ul>
+
+<h4 id="interestings">Interestings:</h4>
+<ul>
+  <li>tapestry</li>
+  <li>extract</li>
+  <li>kaggle.com</li>
+  <li>datakind.org</li>
+  <li>ergast.com</li>
+  <li>import.io</li>
+  <li>Tabula</li>
+  <li>https://youtu.be/ua-CiDNNj30?t=7894</li>
+</ul>
+
+<h2 id="data-science-ds">Data Science (DS)</h2>
+
+<p>Use tools from coding, statistics and math to work creatively with data. <strong>The
+goal is to get insight of the data</strong>.</p>
+<ul>
+  <li>DS takes unstructured data, the finds order, meaning and value.</li>
+  <li>DS provides insight and competitive advantage</li>
+</ul>
+
+<p>DS is the combination of coding, statistics and knowledge of a domain.</p>
+<ul>
+  <li>Coding: used to gather the data</li>
+  <li>Math: Probability, algebra, regression,…</li>
+  <li>Domain: knowledge of the business</li>
+</ul>
+
+<p>Coding + Stats  = Machine Learning (Categorize &amp; Predict)
+Stats  + Domain = Traditional Research
+Coding + Domain = Danger Zone?</p>
+
+<h3 id="steps">Steps</h3>
+
+<p>1 - Planning
+2 - Data Prep.
+3 - Modeling
+4 - Follow up</p>
+
+<h2 id="big-data-bd">Big Data (BD)</h2>
+
+<p>BD is the combination of <strong>Volume</strong> of data, <strong>Velocity</strong> of data and <strong>Variety</strong>
+of data.</p>
+<ul>
+  <li>Volume</li>
+  <li>Velocity</li>
+  <li>Variety</li>
+  <li>Veracity *</li>
+</ul>
+
+<p><a href="https://globallogic.udemy.com/course/learn-big-data-the-hadoop-ecosystem-masterclass/learn/lecture/4786840#overview">Course</a></p>
+:ET

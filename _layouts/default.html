@@ -3,14 +3,12 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="d-flex flex-column">
 
-    {%- include sidebar.html -%}
+    {%- include menu.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="info">
-        {{ content }}
-      </div>
+    <main class="flex-fill w-100" aria-label="Content">
+      {{ content }}
     </main>
 
   </body>
