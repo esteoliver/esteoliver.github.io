@@ -1,0 +1,84 @@
+---
+layout: page
+title: Career
+permalink: /career/
+---
+
+<h1 class="big mt-0">Pragmatism and creativity</h1>
+
+Talented Software Engineer, with the capacities of working under high pressure
+environments, problem solving and communication.
+
+- +4 years developing SaaS, CRM and APIs, with experience in different languages 
+(_Ruby, Python, JS_) and techonologies.
+- Knowledge of good software practices, design patterns and systems architecture.
+- Experience with Agile methodologies and teams.
+- +2 years experience as Team Leader.
+
+<br>
+
+<div class="experience my-5 px-5" markdown="1">
+
+## Senior Software Engineer
+#### GlobalLogic
+###### 07/2018 - Ongoing
+###### Buenos Aires, Argentina
+
+Worked as a member of the outsource backend team of an important e-learning 
+platform, from USA, maintaining the REST API and services, and developing new 
+features. Because of my previous experience, I became leader of the team and 
+dealt with the communication with the client. During this time:
+- Support the team on their technical knowledge and provide my insight on any 
+problems they might encounter.
+- Mentor and coach my team with the objective of improving their skills.
+- Created a program for the growth of RoR developers in the company.
+- Improved the communication between the team and the client.
+
+**Technologies**: _RoR, PostgreSQL, Redis, Kafka, Sidekiq, Rspec_.
+
+</div>
+
+<div class="experience my-5 px-5" markdown="1">
+
+## Technical Lead
+#### Cleteci
+###### 06/2017 - 07/2018
+###### Buenos Aires, Argentina
+
+Lead the main development team in charge of building a CRM/SaaS platform for a 
+client in the travel agencies industry. As part of this team, I was in charge of
+developing all the main features of the platform (client/travels management) and
+the authentication/authorization of the users. During this time:
+- Developed the billing module of the platform, to start charging for the use of 
+the platform.
+- Created a training system that helped the developers to improve their 
+technical skills.
+- Planned with the client the characteristics of the application and the new
+features.
+- Implemented CD/CI.
+- Migrated the platform from Heroku to AWS.
+- Advised on the architecture and development of other projects of the company.
+
+**Technologies**: _RoR, PostgreSQL, Heroku, AWS, CircleCI, Cucumber_.
+
+</div>
+
+<div class="experience my-5 px-5" markdown="1">
+
+## Ssr Full-Stack Developer
+#### Cleteci
+###### 12/2015 - 06/2017
+###### Caracas, Venezuela
+
+Main developer building a CRM/SaaS platform for a client in the travel agencies 
+industry, focused on new features and improvements. During this time:
+- Introduced the concept of good practices in the team.
+- Refactored the application to be able to adjust to the conventions of the 
+tools and framework used in the project.
+- Developed a campaign delivery system for marketing, similar to MailChimp
+- Collaborated developing other projects from the company, mainly building REST
+API and SPA.
+
+**Technologies**: _RoR, AngularJs, Angular 2, NodeJS, Sass, HTML, Javascript._
+
+</div>

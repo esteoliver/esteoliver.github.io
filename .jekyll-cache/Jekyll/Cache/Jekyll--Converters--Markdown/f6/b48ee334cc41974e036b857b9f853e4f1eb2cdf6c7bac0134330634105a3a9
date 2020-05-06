@@ -1,0 +1,85 @@
+I"ý<p>Talented Software Engineer, with the capacities of working under high pressure
+environments, problem solving and communication.</p>
+
+<ul>
+  <li>+4 years developing SaaS, CRM and APIs, with experience in different languages 
+(Ruby, Python, JS) and techonologies.</li>
+  <li>Knowledge of good software practices, design patterns and systems architecture.</li>
+  <li>Experience with Agile methodologies and teams.</li>
+  <li>+2 years experience as Team Leader.</li>
+</ul>
+
+<p><br /></p>
+
+<div class="experience my-5 px-5">
+
+  <h2 id="senior-software-engineer">Senior Software Engineer</h2>
+  <h4 id="globallogic">GlobalLogic</h4>
+  <h6 id="ongoing">07/2018 - Ongoing</h6>
+  <h6 id="buenos-aires-argentina">Buenos Aires, Argentina</h6>
+
+  <p>Worked as a member of the outsource backend team of an important e-learning 
+platform, from USA, maintaining the REST API and services, and developing new 
+features. Because of my previous experience, I became leader of the team and 
+dealt with the communication with the client. During this time:</p>
+  <ul>
+    <li>Support the team on their technical knowledge and provide my insight on any 
+problems they might encounter.</li>
+    <li>Mentor and coach my team with the objective of improving their skills.</li>
+    <li>Created a program for the growth of RoR developers in the company.</li>
+    <li>Improved the communication between the team and the client.</li>
+  </ul>
+
+  <p><strong>Technologies</strong>: <em>RoR, PostgreSQL, Redis, Kafka, Sidekiq, Rspec</em>.</p>
+
+</div>
+
+<div class="experience my-5 px-5">
+
+  <h2 id="technical-lead">Technical Lead</h2>
+  <h4 id="cleteci">Cleteci</h4>
+  <h6 id="section">06/2017 - 07/2018</h6>
+  <h6 id="buenos-aires-argentina-1">Buenos Aires, Argentina</h6>
+
+  <p>Lead the main development team in charge of building a CRM/SaaS platform for a 
+client in the travel agencies industry. As part of this team, I was in charge of
+developing all the main features of the platform (client/travels management) and
+the authentication/authorization of the users. During this time:</p>
+  <ul>
+    <li>Developed the billing module of the platform, to start charging for the use of 
+the platform.</li>
+    <li>Created a training system that helped the developers to improve their 
+technical skills.</li>
+    <li>Planned with the client the characteristics of the application and the new
+features.</li>
+    <li>Implemented CD/CI.</li>
+    <li>Migrated the platform from Heroku to AWS.</li>
+    <li>Advised on the architecture and development of other projects of the company.</li>
+  </ul>
+
+  <p><strong>Technologies</strong>: <em>RoR, PostgreSQL, Heroku, AWS, CircleCI, Cucumber</em>.</p>
+
+</div>
+
+<div class="experience my-5 px-5">
+
+  <h2 id="ssr-full-stack-developer">Ssr Full-Stack Developer</h2>
+  <h4 id="cleteci-1">Cleteci</h4>
+  <h6 id="section-1">12/2015 - 06/2017</h6>
+  <h6 id="caracas-venezuela">Caracas, Venezuela</h6>
+
+  <p>Main developer building a CRM/SaaS platform for a client in the travel agencies 
+industry, focused on new features and improvements. During this time:</p>
+  <ul>
+    <li>Introduced the concept of good practices in the team.</li>
+    <li>Refactored the application to be able to adjust to the conventions of the 
+tools and framework used in the project.</li>
+    <li>Developed a campaign delivery system for marketing, similar to MailChimp</li>
+    <li>Collaborated developing other projects from the company, mainly building REST
+API and SPA.</li>
+  </ul>
+
+  <p><strong>Technologies</strong>: <em>RoR, AngularJs, Angular 2, NodeJS, Sass, HTML, Javascript.</em></p>
+
+</div>
+:ET
