@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   height: 100vh;
   max-width: 100vw;
@@ -23,18 +22,17 @@ body {
   }
 }
 
-$avatar-size: 250px;
 .avatar {
   position: absolute;
-  right: 10%;
-  top: 100px;
+  right: 8%;
+  top: 80px;
   background-image: url(/assets/img/avatar.jpg);
   filter: grayscale(100%);
   background-repeat: no-repeat;
   background-size: cover;
-  width: $avatar-size;
-  height: $avatar-size;
-  border-radius: 50%;
+  background-position: center;
+  width: 200px;
+  height: 500px;
 }
 
 // PAGES ----------------------------
@@ -51,7 +49,7 @@ article {
 
   .post-content {
     h1 {
-      font-family: 'Roboto Slab';
+      line-height: 4rem;
     }
   }
 
@@ -61,15 +59,15 @@ article {
 
     h2 {
       margin: .5rem 0;
-      font-family: 'Roboto Slab';
     }
 
     h4 {
       margin: 0;
     }
 
-    h6 {
+    h6:nth-child(4) {
       margin: 0;
+      margin-bottom: 2rem;
       font-weight: 400;
     }
   }

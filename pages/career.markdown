@@ -15,6 +15,8 @@ environments, problem solving and communication.
 - Experience with Agile methodologies and teams.
 - +2 years experience as Team Leader.
 
+<a class="btn btn-primary text-center mt-4 px-4 py-2" href="/career">Download CV</a>
+
 <br>
 
 <div class="experience my-5 px-5" markdown="1">
