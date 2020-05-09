@@ -4,11 +4,25 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1>{{ paginator.page }}</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<h1 class="big mt-0 mb-5">Some thoughts</h1>
+
+{% for post in site.posts %}
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{ post.imgHeader }}" class="card-img" alt="{{ post.imgCredit }}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h2 class="card-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="card-text">{{ post.resume }}</p>
+        <p class="card-text">
+          <small class="text-muted">{{ post.date | date: "%b %d, %Y" }}</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

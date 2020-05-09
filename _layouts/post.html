@@ -1,38 +1,38 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-
-
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-
-    <div class="image-header"
-         style="background-image: url('{{ page.imgHeader }}');">
-      <span style="display: none;">{{ page.imgCredit }}</span>
-    </div>
-
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      <div class="tags">
-        {%- for tag in page.tags -%}
-          <span>{{ tag }}</span>
-        {%- endfor -%}
-      </div>
-    </p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+<div class="post mt-5">
+  <div class="image-header" style="background-image: url('{{ page.imgHeader }}');">
+    <span style="display: none;">{{ page.imgCredit }}</span>
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <article class="h-entry p-5 p-md-5 mx-auto" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    <header class="post-header mb-5 text-center">
+
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        <div class="tags">
+          {%- for tag in page.tags -%}
+          <span>{{ tag }}</span>
+          {%- endfor -%}
+        </div>
+      </p>
+    </header>
+
+    <div class="post-content e-content text-justify" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+</div>
