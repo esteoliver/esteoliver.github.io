@@ -1,0 +1,26 @@
+---
+layout: page
+title: Cheat Sheets
+permalink: /cheatsheet/
+---
+
+<h1 class="big mt-0">A little peek...</h1>
+
+<p class="mb-5 pb-5">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium deserunt 
+  dicta, eligendi esse sapiente quidem ipsam facilis doloribus, ea voluptatibus 
+  perferendis distinctio voluptatum obcaecati nam nostrum quisquam est odio 
+  quibusdam.
+</p>
+
+<div class="list-group list-group-flush " id="list-tab-cs" role="tablist">
+  {% for cs in site.data.cheatsheets %}
+    {% if page.key == cs.key %}
+    <a  class="list-group-item list-group-item-action active"
+        href="/cheatsheet/{{ cs.key }}">{{ cs.name }}</a>
+    {% else %}
+      <a  class="list-group-item list-group-item-action"
+          href="/cheatsheet/{{ cs.key }}">{{ cs.name }}</a>
+    {% endif %}
+  {% endfor %}
+</div>

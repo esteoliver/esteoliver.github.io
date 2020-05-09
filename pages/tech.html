@@ -21,6 +21,6 @@ permalink: /tech/
 
 <div class="accordion" id="tech-stack-accordion">
   {% for tech in site.data.stack %}
-    {%- include {{ tech.key }}.stack.html -%}
+    {%- include stack/{{ tech.key }}.stack.html -%}
   {% endfor %}
 </div>
