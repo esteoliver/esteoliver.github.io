@@ -1,0 +1,45 @@
+---
+layout: page
+title: Wiki
+permalink: /wiki/
+---
+
+<h1 class="big mt-0">Maintaining the concepts fresh</h1>
+
+<p class="mb-5">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium deserunt 
+  dicta, eligendi esse sapiente quidem ipsam facilis doloribus, ea voluptatibus 
+  perferendis distinctio voluptatum obcaecati nam nostrum quisquam est odio 
+  quibusdam.
+</p>
+
+<div class="row">
+  <div class="col-4">
+    <div class="list-group list-group-flush " id="list-tab" role="tablist">
+      {% for topic in site.data.topics %}
+        <a  class="list-group-item list-group-item-action"
+            id="list-{{ topic.key }}-list"
+            data-toggle="list" 
+            href="#list-{{ topic.key }}"
+            role="tab" 
+            aria-controls="{{ topic.key }}">{{ topic.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div  class="tab-pane fade show active" 
+            role="tabpanel">
+            Placeholder
+      </div>
+      {% for topic in site.data.topics %}
+        <div  class="tab-pane fade"
+              id="list-{{ topic.key }}"
+              role="tabpanel"
+              aria-labelledby="list-{{ topic.key }}-list">
+              {% include topics/{{ topic.key }}.topic.markdown | markdownify %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

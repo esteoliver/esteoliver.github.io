@@ -1,0 +1,52 @@
+I"8<h1 class="big mt-0">Maintaining the concepts fresh</h1>
+
+<p class="mb-5">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium deserunt 
+  dicta, eligendi esse sapiente quidem ipsam facilis doloribus, ea voluptatibus 
+  perferendis distinctio voluptatum obcaecati nam nostrum quisquam est odio 
+  quibusdam.
+</p>
+
+<div class="row">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      
+        <a class="list-group-item list-group-item-action" id="list-big-data-list" data-toggle="list" href="#list-big-data" role="tab" aria-controls="big-data">Big Data</a>
+      
+        <a class="list-group-item list-group-item-action" id="list-rest-api-list" data-toggle="list" href="#list-rest-api" role="tab" aria-controls="rest-api">REST API</a>
+      
+        <a class="list-group-item list-group-item-action" id="list-cloud-computing-list" data-toggle="list" href="#list-cloud-computing" role="tab" aria-controls="cloud-computing">Cloud Computing</a>
+      
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" role="tabpanel">
+            Placeholder
+      </div>
+      
+        <div class="tab-pane fade" id="list-big-data" role="tabpanel" aria-labelledby="list-big-data-list">
+              # Big Data
+
+s
+        </div>
+      
+        <div class="tab-pane fade" id="list-rest-api" role="tabpanel" aria-labelledby="list-rest-api-list">
+              # REST API
+
+s
+        </div>
+      
+        <div class="tab-pane fade" id="list-cloud-computing" role="tabpanel" aria-labelledby="list-cloud-computing-list">
+              # Cloud Computing
+
+<br />
+
+Use of comṕuting resources (hardware and software) that are delivered as a 
+service over the internet or a network.
+        </div>
+      
+    </div>
+  </div>
+</div>
+:ET
