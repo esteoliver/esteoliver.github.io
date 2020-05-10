@@ -1,0 +1,23 @@
+---
+layout: page
+title: Tech Stack
+permalink: /tech/
+---
+
+<h1 class="big mt-0">Always learning something new</h1>
+
+<p class="mb-5">
+  Resumen de la tecnologia y grafica de barras del progreso (matriz)
+</p>
+
+<div class="list-group list-group-flush " id="list-tab-cs" role="tablist">
+  {% for tech in site.data.stack %}
+    {% if page.key == tech.key %}
+    <a  class="list-group-item list-group-item-action active"
+        href="/tech/{{ tech.key }}">{{ tech.name }}</a>
+    {% else %}
+      <a  class="list-group-item list-group-item-action"
+          href="/tech/{{ tech.key }}">{{ tech.name }}</a>
+    {% endif %}
+  {% endfor %}
+</div>

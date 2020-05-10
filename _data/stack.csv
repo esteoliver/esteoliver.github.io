@@ -1,4 +1,10 @@
 name,key
-Ruby ,ruby
-Rails ,rails
-JavaScript ,javascript
+Ruby,ruby
+Rails,rails
+JavaScript,javascript
+NodeJS ,nodejs
+PostgreSQL ,postgresql
+Python ,python
+Scala ,scala
+Hadoop ,hadoop
+Kafka ,kafka
