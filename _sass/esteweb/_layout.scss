@@ -84,6 +84,16 @@ article {
   }
 }
 
+pre {
+  padding: 15px;
+  background: black;
+  color: white;
+
+  code {
+    color: white !important;
+  }
+}
+
 // BLOBS ----------------------------
 .blob {
   position: absolute;
