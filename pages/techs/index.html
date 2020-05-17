@@ -12,12 +12,10 @@ permalink: /tech/
 
 <div class="list-group list-group-flush " id="list-tab-cs" role="tablist">
   {% for tech in site.data.stack %}
-    {% if page.key == tech.key %}
-    <a  class="list-group-item list-group-item-action active"
-        href="/tech/{{ tech.key }}">{{ tech.name }}</a>
-    {% else %}
-      <a  class="list-group-item list-group-item-action"
-          href="/tech/{{ tech.key }}">{{ tech.name }}</a>
-    {% endif %}
+    <a  class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+        href="/tech/{{ tech.key }}">
+        <span>{{ tech.name }}</span>
+        <span class="badge badge-primary badge-pill">{{ tech.category }}</span>
+    </a>
   {% endfor %}
 </div>

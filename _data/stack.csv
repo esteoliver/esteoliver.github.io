@@ -1,10 +1,11 @@
-name,key
-Ruby,ruby
-Rails,rails
-JavaScript,javascript
-NodeJS ,nodejs
-PostgreSQL ,postgresql
-Python ,python
-Scala ,scala
-Hadoop ,hadoop
-Kafka ,kafka
+name,key,category
+Ruby,ruby,language
+Redis,redis,db
+Rails,rails,framework
+JavaScript,javascript,language
+NodeJS,nodejs
+PostgreSQL,postgresql,db,
+Python,python,language
+Scala,scala,language
+Hadoop,hadoop,
+Kafka,kafka
