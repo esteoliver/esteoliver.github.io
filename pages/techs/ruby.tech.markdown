@@ -24,6 +24,7 @@ Useful links: <br>
 [Hyperpolyglot](https://hyperpolyglot.org/scripting) <br>
 [Ruby Academy](https://www.rubycademy.com/) <br>
 [Questions](https://rubygarage.org/blog/how-to-interview-your-ruby-on-rails-developer)
+[Memoize]
 
 </div>
 
