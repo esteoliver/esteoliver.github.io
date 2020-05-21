@@ -1,0 +1,15 @@
+---
+layout: page
+title: Bookmarks
+permalink: /bookmarks/
+---
+
+<ul>
+  {% for bookmark in site.data.bookmarks %}
+    <li>
+      <a  class=""
+          href="{{ bookmark.link }}">{{ bookmark.name }}</a>
+      <span>{{ bookmark.category }}</span>
+    </li>
+  {% endfor %}
+</ul>
