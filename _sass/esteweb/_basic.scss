@@ -8,10 +8,6 @@ $btn-bg-color: #3F53D9;
 
 // TEXT -----------------------------
 
-h1.big {
-  font-size: 3.5rem;
-}
-
 a {
   color:$orange-300;
   text-decoration: underline;
@@ -20,6 +16,28 @@ a {
   &:hover {
     color: $green-300;
     transition: 0.3s;
+  }
+}
+
+b {
+  font-weight: normal;
+  color: $orange-300;
+}
+
+.section-title {
+  color: $orange-300;
+  font-size: 1rem;
+  position: relative;
+  margin-bottom: 3rem;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    border-top: 1px solid $orange-300;
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
   }
 }
 

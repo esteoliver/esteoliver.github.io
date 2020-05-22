@@ -2,8 +2,9 @@
 
 .landing {
   @include dark-background;
+  position: relative;
   padding-top: 70px;
-  box-shadow: inset 0px -70px 76px -74px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -70px 76px -74px rgba(0,0,0,0.5);
 
   .greeting {
     width: 30%;
@@ -43,7 +44,7 @@
     p { font-size: 0.8rem; }
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 500px) {
     flex-direction: column;    
     padding: 0;
     text-align: center;
@@ -70,11 +71,46 @@
 }
 
 .about-me {
-  @media (min-width: 770px) {
-    max-width: 75%;
+  padding: 150px 12.5%;
+  background: $black-400;
 
-    .info {
-      max-width: 80%;
+  .info {
+    margin-bottom: 4rem;
+
+    > div {
+      flex: 1;
     }
+
+    .body {
+      flex: 2;
+
+      .title {
+        color: $white-100;
+        font-weight: bolder;
+        font-size: 3rem;
+      }
+
+      .subtitle {
+        color: $white-100;
+        width: 80%;
+        font-size: 1.4rem;
+        font-weight: bolder;
+      }
+
+      .text {
+        width: 80%;
+        color: $white-300;
+        font-size: .9rem;
+      }
+    }
+
+    &.personal {
+      margin-top: 4rem;
+      text-align: center;
+    }
+  }
+
+
+  @media (min-width: 500px) {
   }  
 }
