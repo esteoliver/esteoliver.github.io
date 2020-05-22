@@ -18,7 +18,7 @@
     .name {
       font-weight: bolder;
       color: $white-100;
-      font-size: 7rem;
+      font-size: 6rem;
       position: absolute;
       z-index: 1;
   
@@ -77,6 +77,7 @@
   .info {
     margin-bottom: 4rem;
     position: relative;
+    width: 90%;
 
     > div {
       flex: 1;
@@ -119,10 +120,10 @@
     }
 
     img {
-      width: 45%;
+      width: 50%;
       position: absolute;
-      top: 150px;
-      right: 0;
+      top: 200px;
+      right: -100px;
     }
 
     &.personal {
@@ -130,6 +131,7 @@
       text-align: center;
       border-bottom: 2px solid $orange-300;
       padding-bottom: 30px;
+      width: 80%;
 
       p {
         margin-left: auto;
