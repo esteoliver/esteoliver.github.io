@@ -71,11 +71,12 @@
 }
 
 .about-me {
-  padding: 150px 12.5%;
+  padding: 150px 15%;
   background: $black-400;
 
   .info {
     margin-bottom: 4rem;
+    position: relative;
 
     > div {
       flex: 1;
@@ -91,8 +92,8 @@
       }
 
       .subtitle {
-        color: $white-100;
         width: 80%;
+        color: $white-100;
         font-size: 1.4rem;
         font-weight: bolder;
       }
@@ -104,9 +105,36 @@
       }
     }
 
+    .number {
+      color: $orange-300;
+      font-size: 6rem;
+      font-weight: bolder;
+      text-align: right;
+      min-width: 120px;
+
+      & ~ p {
+        padding-left: 10px;
+        color: $white-100;
+      }
+    }
+
+    img {
+      width: 45%;
+      position: absolute;
+      top: 150px;
+      right: 0;
+    }
+
     &.personal {
       margin-top: 4rem;
       text-align: center;
+      border-bottom: 2px solid $orange-300;
+      padding-bottom: 30px;
+
+      p {
+        margin-left: auto;
+        margin-right: auto;        
+      }
     }
   }
 
