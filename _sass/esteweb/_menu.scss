@@ -1,0 +1,16 @@
+header.menu {
+  padding: 0 10%;
+  background: #222222;
+
+  a {
+    color: #fff;
+
+    &.active {
+      color: #F26B50;
+    }
+  }
+
+  .social .lni {
+      color: #F26B50;
+  }
+}

@@ -1,14 +1,14 @@
-<header class="menu w-100 d-flex px-4 position-relative">
-  <ul class="d-flex align-items-center pt-5 px-2 px-md-5 m-0">
-    <li class="mr-5"><a href="/">Home</a></li>
-    <li class="mr-5"><a href="/career">Career</a></li>
-    <li class="mr-5"><a href="/tech">Tech Stack</a></li>
-    <li class="mr-5"><a href="/blog">Blog</a></li>
-    <li class="mr-5"><a href="/wiki">Wiki</a></li>
-    <li class="mr-5"><a href="/cheatsheet">Cheat Sheets</a></li>
-    <li class="mr-5"><a href="/bookmarks">Bookmarks</a></li>
+<header class="menu w-100 d-flex position-relative">
+  <ul class="d-flex align-items-center py-5 px-2 px-md-5 m-0">
+    {% for item in site.data.menu %}
+      {% if item.link == page.dir %}
+        <li class="mr-5"><a class="active" href="{{ item.link }}">{{ item.name }}</a></li>
+      {% else %}
+        <li class="mr-5"><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endif %}
+    {% endfor %}
   </ul>
-  <ul class="social pt-5 px-5 m-0 d-none d-md-flex text-primary">
+  <ul class="social py-5 px-5 m-0 d-none d-md-flex">
     <li class="mr-4"><i class="lni lni-linkedin-original"></i></li>
     <li class="mr-4"><i class="lni lni-twitter-original"></i></li>
     <li class="mr-4"><i class="lni lni-instagram-filled"></i></li>
