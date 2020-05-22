@@ -1,0 +1,26 @@
+@import './utils';
+
+.page {
+  height: 100%;
+
+  .page-header {
+    padding: 40px 0 150px;
+  }
+
+  .page-title {
+    color: $white-100;
+  }
+
+  .page-wrapper {
+    background: $black-400;
+  }
+
+  .page-body {
+    background: $white-100;
+    width: 70%;
+    padding: 100px 5%;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+  }
+}

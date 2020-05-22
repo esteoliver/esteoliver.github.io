@@ -6,9 +6,12 @@ $black-200: #909090;
 $black-300: #222222;
 $black-400: #191919;
 
+$orange-200: #F6846D;
 $orange-300: #F26B50;
 
 $green-300: #64F0BB;
+
+$blue-300: #415AD9;
 
 @mixin dark-background {
   background: $black-300;
