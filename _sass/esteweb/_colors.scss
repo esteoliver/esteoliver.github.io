@@ -14,3 +14,7 @@ $green-300: #64F0BB;
   background: $black-300;
   color: $black-200;
 }
+
+.dark-background {
+  @include dark-background;
+}
