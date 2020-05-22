@@ -12,6 +12,16 @@ h1.big {
   font-size: 3.5rem;
 }
 
+a {
+  color:$orange-300;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+
+  &:hover {
+    color: $green-300;
+    transition: 0.3s;
+  }
+}
 
 // BUTTON ---------------------------
 

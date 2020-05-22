@@ -1,16 +1,32 @@
+@import './utils';
+
 header.menu {
+  @include dark-background;
   padding: 0 10%;
-  background: #222222;
+  font-size: 0.9rem;
 
+  //----------------- MENU ITEMS
   a {
+    text-decoration: none;
     color: #fff;
+    padding-bottom: 5px;
 
-    &.active {
-      color: #F26B50;
+    &.active, &:hover {
+      color: $orange-300;
+      border-bottom: 1px dotted $orange-300;
+      transition: .3s;
     }
   }
 
+
+  //------------------ SOCIAL LINKS
   .social .lni {
-      color: #F26B50;
+    color: $orange-300;
+    cursor: pointer;
+    
+    &:hover {
+      color: $green-300;
+      transition: 0.3s;
+    }
   }
 }

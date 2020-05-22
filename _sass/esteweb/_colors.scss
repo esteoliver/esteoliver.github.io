@@ -1,0 +1,14 @@
+$white-100: #fff;
+
+$black-200: #909090;
+$black-300: #222222;
+$black-400: #1F1F1F;
+
+$orange-300: #F26B50;
+
+$green-300: #64F0BB;
+
+@mixin dark-background {
+  background: $black-300;
+  color: $black-200;
+}
