@@ -4,12 +4,29 @@ title: Bookmarks
 permalink: /bookmarks/
 ---
 
-<ul>
-  {% for bookmark in site.data.bookmarks %}
-    <li>
-      <a  class=""
-          href="{{ bookmark.link }}">{{ bookmark.name }}</a>
-      <span>{{ bookmark.category }}</span>
-    </li>
-  {% endfor %}
-</ul>
+<div class="page-header dark-background">
+  <div class="w-50 mx-auto">
+    <h1 class="page-title mt-0 mb-4">Some cool stuffs</h1>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium deserunt 
+      dicta, eligendi esse sapiente quidem ipsam facilis doloribus, ea voluptatibus 
+      perferendis distinctio voluptatum obcaecati nam nostrum quisquam est odio 
+      quibusdam.
+    </p>    
+  </div>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-body">
+    <ul>
+      {% for bookmark in site.data.bookmarks %}
+        <li>
+          <a  class=""
+              href="{{ bookmark.link }}">{{ bookmark.name }}</a>
+          <span>{{ bookmark.category }}</span>
+        </li>
+      {% endfor %}
+    </ul>    
+  </div>
+</div>

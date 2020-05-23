@@ -1,9 +1,19 @@
-name,key
-OOP,oop
-OAuth 2.0,oauth
-Design Patterns,design-patterns
+name,key,category
 Big Data,big-data
 Cloud Computing,cloud-computing
+Design Patterns,design-patterns
+Engineering Principles,eng-principles,,https://dev.to/luminousmen/what-are-the-best-software-engineering-principles--3p8n
+Hadoop,hadoop,
+JavaScript,javascript,language
+Kafka,kafka
+NodeJS,nodejs
+OAuth 2.0,oauth
+OOP,oop
+PostgreSQL,postgresql,db,
+Python,python,language
+Rails,rails,framework
+Redis,redis,db
 REST API,rest-api
+Ruby,ruby,language
+Scala,scala,language
 SDK,sdk
-Engineering Principles,eng-principles,https://dev.to/luminousmen/what-are-the-best-software-engineering-principles--3p8n

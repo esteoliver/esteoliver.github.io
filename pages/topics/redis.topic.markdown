@@ -1,8 +1,8 @@
 ---
-layout: tech_page
+layout: wiki_page
 title: Teck Stack
 subtitle: Redis
-permalink: /tech/redis
+permalink: /wiki/redis
 key: redis
 ---
 

@@ -1,26 +1,20 @@
 ---
-layout: page
+layout: wiki_page
 title: Wiki
 permalink: /wiki/
 ---
 
-<h1 class="big mt-0">Maintaining the concepts fresh</h1>
-
-<p class="mb-5 pb-5">
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium deserunt 
-  dicta, eligendi esse sapiente quidem ipsam facilis doloribus, ea voluptatibus 
-  perferendis distinctio voluptatum obcaecati nam nostrum quisquam est odio 
-  quibusdam.
-</p>
-
-<div class="list-group list-group-flush " id="list-tab-topics" role="tablist">
-  {% for topic in site.data.topics %}
-    {% if page.key == topic.key %}
-    <a  class="list-group-item list-group-item-action active"
-        href="/wiki/{{ topic.key }}">{{ topic.name }}</a>
-    {% else %}
-      <a  class="list-group-item list-group-item-action"
-          href="/wiki/{{ topic.key }}">{{ topic.name }}</a>
-    {% endif %}
-  {% endfor %}
+<div class="d-flex justify-content-between">
+{% assign categories = site.data.topics | group_by:"category" | reverse %}
+{% for category in categories %}
+  <div>
+    <h6>{{ category.name | upcase }}</h6>
+    {% assign topics = category.items %}
+    {% for topic in topics %}
+    <div>
+      <a href="/wiki/{{ topic.key }}">{{ topic.name }}</a>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
 </div>

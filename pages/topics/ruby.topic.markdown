@@ -1,8 +1,8 @@
 ---
-layout: tech_page
+layout: wiki_page
 title: Teck Stack
 subtitle: Ruby
-permalink: /tech/ruby
+permalink: /wiki/ruby
 key: ruby
 ---
 
