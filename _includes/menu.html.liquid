@@ -1,0 +1,12 @@
+<header class="navbar">
+  <nav class="u-full-width" style="text-align: center">
+    {%- include components/avatar.html.liquid url="/" -%}
+    {% for item in site.data.menu %}
+      {% if item.link == page.dir %}
+        <a class="active" href="{{ item.link }}">{{ item.name }}</a>
+      {% else %}
+        <a href="{{ item.link }}">{{ item.name }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</header>

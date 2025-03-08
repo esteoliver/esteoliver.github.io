@@ -2,127 +2,60 @@
 layout: default
 ---
 
-<div class="home position-relative">
-
-  <div class="landing d-flex">
-
-    <!-- NAME -->
-    <div class="greeting pt-3">
-      <h1 class="hi mb-0">Hi there! I'm</h2>
-      <h1 class="name first m-0">Esteban</h1>
-      <h1 class="name last m-0">Oliveros</h1>
-    </div>
-
-    <!-- AVATAR -->
-    <div class="">
-      <div class="avatar d-none d-md-block"></div>      
-    </div>
-
-    <!-- INTRO -->
-    <div class="intro pt-5">
-      <h5>A pragmatic software engineer and creative developer.</h5>
-
-      <p>
-        Currently working at <a href="https://www.globallogic.com" target="blank">GlobalLogic</a>.
-      </p>
-  
-      <p>
-        I have worked as a developer since 2016, mainly using RoR
-        and NodeJs. I enjoy the process of building a modern world
-        through code.
-      </p>
-  
-      <h5><a class="mt-4px-5 py-3" href="/career">Take a look at my career</a></h5>
-    </div>
-
-    <!-- AVATAR MOBILE -->
-    <div class="">
-      <div class="avatar d-block d-md-none"></div>      
-    </div>
-
-  </div>
-
-
-  <div class="about-me mx-auto">
-    <div class="px-4 px-md-0  mx-auto d-flex flex-column">
-      <h5 class="section-title">About me</h5>
-
-      <div class="info d-flex">
-        <div class="body">
-          <h2 class="title">
-            Much more than just a developer
-          </h2>
-    
-          <p class="text">
-            I'm always improving my not-so-softs softskills, because a project is not only
-            about code, is about the people that writes that code.
-            <br><br>
-            I have had the opportunity to lead and coach great teams.
-            I learned a lot from them: how to communicate, solve conflict,
-            and menthor new developers into their path careers.
-          </p>  
-        </div>
-
+<div class="container">
+    <div class="hero">
         <div>
-          <div class="d-flex align-items-center mb-4">
-            <h1 class="number">+4</h1>
-            <p>Years of experience</p>
-          </div>
+            <span class="name">Esteban Oliveros</span>
+            <h1 class="title">A collection of stories, ideas & recommendations</h1>
+        </div>
+        <nav>
+            {% for item in site.data.categories %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+    </div>
 
-          <div class="d-flex align-items-center">
-            <h1 class="number">2</h1>
-            <p>Years as team leader and Scrum Master</p>
-          </div>
+    <div class="latest-posts">
+        <nav>
+            {% for post in site.posts %}
+                <div style="display: inline-block; margin: 0 16px">
+                    {%- include components/post_thumbnail.html.liquid title=post.title resume=post.resume thumbnail=post.imgHeader url=post.url -%}
+                </div>
+            {% endfor %}
+       </nav>
+    </div>
+
+    <section class="quick-intro">
+        <h5>Quick Intro</h5>
+        <p>
+            I'm Esteban Oliveros, a software developer passionate about building scalable, efficient, and user-friendly applications.
+            I enjoy exploring new technologies, optimizing workflows, and solving complex problems with clean, maintainable code.
+        </p>
+        <p>
+            This site is my personal archive of ideas, insights, and experiences—covering software development, architecture decisions,
+            and personal learnings. Whether it's a deep dive into a new framework, a reflection on past projects, or recommendations on tools I love,
+            I document it all here. My goal is to share knowledge, spark discussions, and keep a record of my journey in tech.
+        </p>
+
+        <div style="text-align: right">
+            <a class="u-pull-left" style="color: #000000; text-decoration: underline" href="/career">Know more</a>
+            {%- include components/avatar.html.liquid size="lg" -%}
         </div>
-      </div>
-  
-      <div class="info d-flex">
-        <div class="body">
-          <h1 class="title">I'm a seeker of knowledge</h1>
-  
-          <p class="text">
-            I love to learn more. <br><br>
-      
-            Software is always evolving, so as a software engineer/developer I can't stay behind.
-            Although my experience is limited to <b>Ruby</b> and <b>JavaScript</b>, I try not
-            to be entangled to just one language or one technology. <br><br>
-      
-            I'm currently learning <b>Python</b>, <b>GoLang</b> and <b>Big Data</b>.
-          </p>  
-        </div>
+    </section>
+
+    <section>
+        <h3>Recommendations</h3>
+        <p>
+            I'm always on the lookout for tools, resources, and practices that can help me become a better developer. Here are some of my top recommendations:
+        </p>
+    </section>
+
+
+    <section>
         <div>
-          <img src="./assets/img/develop.svg" alt="">
+            <h3>Latest Posts</h3>
+            {%- include latest_post.html.liquid -%}
+            <a href="/blog" class="btn">See All Posts</a>
         </div>
-      </div>
-  
-      <div class="info d-flex">
-        <div class="body">
-          <h1 class="title">Working smartly</h1>
-  
-          <p class="text">
-            I value my time, and that's why when I'm solving a problem, I'm not just 
-            trying to fix it, I'm also trying to understand and learn. This generates
-            more value over time, and much less effort.<br><br>
-            I'm not a hard worker. When facing a problem, I'm smart and creative.
-          </p>  
-        </div>        
-        <div></div>
-      </div>
-  
-      <div class="info mx-auto personal">
-        <div class="body">
-          <p class="subtitle">
-            Every day I work with people, not machines.
-          </p>
-  
-          <p class="text">
-            Beyond being a developer, I'm a Venezuelan man, born in a curious date
-            (December 24), married to an amazing woman and father of a cat.
-            I love playing games, watch a lot of movies and cook.       
-            And even more than that.
-          </p>            
-        </div>
-      </div>
-    </div>  
-  </div>
+    </section>
 </div>

@@ -1,0 +1,15 @@
+a.avatar {
+  display: inline-block;
+  background: url("/assets/img/avatar-bg.jpg");
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+
+  &.lg {
+    width: 9rem;
+    height: 9rem;
+  }
+}

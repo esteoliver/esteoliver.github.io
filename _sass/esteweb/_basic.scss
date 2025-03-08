@@ -1,69 +1,9 @@
-$btn-bg-color: #3F53D9;
-
-// POSITIONING ----------------------
-
-.position-relative {
-  position: relative;
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f9fbff;
+  padding-bottom: 15rem;
 }
 
-// TEXT -----------------------------
-
-a {
-  color:$orange-300;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-
-  &:hover {
-    color: $blue-300;
-    transition: 0.3s;
-  }
-}
-
-p {
-  font-size: 1rem;
-}
-
-li {
-  font-size: 1rem;
-}
-
-b {
-  font-weight: normal;
-  color: $orange-300;
-}
-
-.section-title {
-  color: $orange-300;
-  font-size: 1rem;
-  position: relative;
-  margin-bottom: 3rem;
-
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 100px;
-    border-top: 1px solid $orange-300;
-    margin-left: 10px;
-    position: absolute;
-    top: 50%;
-  }
-}
-
-// BUTTON ---------------------------
-
-.btn {
-  display: inline-block;
-  background: $btn-bg-color;
-  border-radius: 25px;
-  color: #fff;
-  padding: 15px 30px;
-  border: 0;
-}
-
-.btn-primary {
-  background: $orange-300;
-}
-
-a.btn {
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
 }

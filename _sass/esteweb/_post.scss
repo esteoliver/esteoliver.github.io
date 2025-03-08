@@ -1,0 +1,33 @@
+.post {
+  padding: 5rem 100px;
+
+  header {
+    .thumbnail {
+      width: calc(100% + 300px);
+      height: 300px;
+      margin: 5rem -150px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 2rem;
+    }
+  }
+
+  .categories {
+    a {
+      margin-right: 1rem;
+      color: #000000;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+
+  .tags {
+    a {
+      margin-right: 1rem;
+      color: #000000;
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+    }
+  }
+}

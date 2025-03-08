@@ -1,32 +1,26 @@
-@import './utils';
+header.navbar {
+  margin-bottom: 2rem;
 
-header.menu {
-  @include dark-background;
-  padding: 0 10%;
-  font-size: 0.9rem;
+  nav {
+    margin-top: 4rem;
 
-  //----------------- MENU ITEMS
-  a {
-    text-decoration: none;
-    color: #fff;
-    padding-bottom: 5px;
-
-    &.active, &:hover {
-      color: $orange-300;
-      border-bottom: 1px dotted $orange-300;
-      transition: .3s;
+    a.avatar {
+      position: absolute;
+      left: 4rem;
+      top: 3rem;
     }
-  }
 
+    a:not(.avatar) {
+      display: inline-block;
+      margin: 0 1.5rem;
+      transition: 0.1s;
+      text-decoration: none;
+      color: #000000;
+      line-height: 3rem;
 
-  //------------------ SOCIAL LINKS
-  .social .lni {
-    color: $orange-300;
-    cursor: pointer;
-    
-    &:hover {
-      color: $blue-300;
-      transition: 0.3s;
+      &.active {
+        border-bottom: 1px solid #000000;
+      }
     }
   }
 }

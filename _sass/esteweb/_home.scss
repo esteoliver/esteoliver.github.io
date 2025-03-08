@@ -1,146 +1,85 @@
 @import './utils';
 
-.landing {
-  @include dark-background;
-  position: relative;
-  padding-top: 70px;
-  box-shadow: inset 0px -70px 76px -74px rgba(0,0,0,0.5);
+.hero {
+  text-align: center;
+  padding: 4rem 0;
 
-  .greeting {
-    width: 30%;
-    padding-left: 70px;
-
-    .hi {
-      font-size: 2rem;
-    }
-
-    $name-pos: 7rem;
-    .name {
-      font-weight: bolder;
-      color: $white-100;
-      font-size: 6rem;
-      position: absolute;
-      z-index: 1;
-  
-      &.first { top: $name-pos; }
-      &.last  { top: $name-pos + 6rem; }
-    }  
+  .name {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 200;
   }
 
-  .avatar {
-    background-image: url(/assets/img/avatar.png);
-    position: relative;
-    z-index: 1;
-    filter: grayscale(100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 320px;
-  }
-  
-  .intro {
-    width: 30%;
-    
-    p { font-size: 0.8rem; }
+  .title {
+
   }
 
-  @media (max-width: 500px) {
-    flex-direction: column;    
-    padding: 0;
-    text-align: center;
-    
-    .greeting {
-      width: 100%;
-      padding: 0 30px 0;
+  nav {
+    margin-top: 4rem;
 
-      .name { 
-        font-size: 4rem;
-        position: initial;
+    a {
+      display: inline-block;
+      margin: 0 1rem;
+      background: rgba(#000000, 0.1);
+      padding: 0.5rem 2rem;
+      color: #000000;
+      border-radius: 16px;
+      transition: 0.3s;
+
+      &:hover {
+        background: rgba(#000000, 0.6);
+        color: #ffffff;
       }
     }
-
-    .intro {
-      width: 100%;
-      padding: 0 30px 50px;
-    }
-
-    .avatar {
-      width: 100%;
-    }
-  }  
+  }
 }
 
-.about-me {
-  padding: 150px 15%;
-  background: $black-400;
+.latest-posts nav {
+  padding: 2rem 0;
+}
 
-  .info {
-    margin-bottom: 4rem;
-    position: relative;
-    width: 90%;
+.latest-posts {
+  margin-bottom: 6rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+  overflow-x: auto;  /* Enable horizontal scrolling if content overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
+  gap: 10px; /* Optional: Adds spacing between images */
+  scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
 
-    > div {
-      flex: 1;
-    }
+  width: 100vw; /* Make it full width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* Center it */
+  margin-right: -50vw;
+  padding: 2rem;
 
-    .body {
-      flex: 2;
+  scroll-snap-type: x mandatory; /* Enables snap scrolling */
 
-      .title {
-        color: $white-100;
-        font-weight: bolder;
-        font-size: 3rem;
-      }
-
-      .subtitle {
-        width: 80%;
-        color: $white-100;
-        font-size: 1.4rem;
-        font-weight: bolder;
-      }
-
-      .text {
-        width: 80%;
-        color: $white-300;
-        font-size: .9rem;
-      }
-    }
-
-    .number {
-      color: $orange-300;
-      font-size: 6rem;
-      font-weight: bolder;
-      text-align: right;
-      min-width: 120px;
-
-      & ~ p {
-        padding-left: 10px;
-        color: $white-100;
-      }
-    }
-
-    img {
-      width: 50%;
-      position: absolute;
-      top: 200px;
-      right: -100px;
-    }
-
-    &.personal {
-      margin-top: 4rem;
-      text-align: center;
-      border-bottom: 2px solid $orange-300;
-      padding-bottom: 30px;
-      width: 80%;
-
-      p {
-        margin-left: auto;
-        margin-right: auto;        
-      }
-    }
+  & > div {
+    scroll-snap-align: center; /* Ensures items snap to center */
   }
 
+  &::-webkit-scrollbar {
+    height: 6px; /* Adjust scrollbar height */
+  }
 
-  @media (min-width: 500px) {
-  }  
+  &::-webkit-scrollbar-thumb {
+    background: #ccc; /* Scrollbar color */
+    border-radius: 10px;
+  }
+}
+
+.quick-intro {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
+  background: rgba(#000000, 0.1);
+}
+
+section {
+  margin-bottom: 6rem;
 }
