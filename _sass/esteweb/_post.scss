@@ -1,14 +1,76 @@
 .post {
-  padding: 5rem 100px;
+  padding: 5rem 0;
+
+  @media (min-width: 1000px) {
+    padding: 5rem 100px;
+  }
 
   header {
+    margin-bottom: 5rem;
+
+    .categories, .title, .subtitle, .resume, .tags {
+      background: #eeeeee;
+      width: 90%;
+      margin: 0 auto;
+      padding: 0 2rem;
+      z-index: 2;
+      position: relative;
+
+      @media (min-width: 750px) {
+        background: #f9fbff;
+        padding: 0 5rem;
+      }
+    }
+
+    .categories {
+      padding-top: 2rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      padding-bottom: 2rem;
+    }
+
+    .tags {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
     .thumbnail {
-      width: calc(100% + 300px);
-      height: 300px;
-      margin: 5rem -150px;
+      width: 100vw; /* Make it full width */
+      height: 250px;
+      position: relative;
+      z-index: 1;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw; /* Center it */
+      margin-right: -50vw;
       background-size: cover;
-      background-position: center;
-      border-radius: 2rem;
+      background-position: bottom;
+      margin-bottom: -100px;
+      filter: grayscale(100%);
+
+      &.phone {
+        @media (min-width: 750px) {
+          display: none;
+        }
+      }
+
+
+      &.desktop {
+        display: none;
+
+        @media (min-width: 750px) {
+          display: block;
+          width: 100%; /* Make it full width */
+          left: 0;
+          right: 0;
+          margin-left: auto; /* Center it */
+          margin-right: auto;
+          background-position: center;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
@@ -28,6 +90,12 @@
       text-decoration: underline;
       text-transform: uppercase;
       font-size: 1.2rem;
+    }
+  }
+
+  .content {
+    @media (min-width: 750px) {
+      padding: 0 5rem;
     }
   }
 }

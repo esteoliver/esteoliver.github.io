@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
-<div class="container post">
-  <article>
+<div class="container">
+  <article class="post">
     <header>
+      <div class="thumbnail phone" style="background-image: url('{{ page.imgHeader }}')"></div>
+
       <div class="categories">
         {%- for category in site.categories -%}
         <a href="">{{ category[0] }}</a>
         {%- endfor -%}
       </div>
 
-      <h1>{{ page.title }}</h1>
-      <p>
+      <h1 class="title">{{ page.title }}</h1>
+      <p class="subtitle">
         <i>{{ page.date | date: "%B %d, %Y" }}</i>
       </p>
-      <p>{{ page.resume }}</p>
+      <p class="resume">{{ page.resume }}</p>
 
       <div class="tags">
         {%- for tag in site.tags -%}
@@ -22,9 +24,11 @@ layout: default
         {%- endfor -%}
       </div>
 
-      <div class="thumbnail" style="background-image: url('{{ page.imgHeader }}')"></div>
+      <div class="thumbnail desktop" style="background-image: url('{{ page.imgHeader }}')"></div>
     </header>
 
-    {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
   </article>
 </div>
