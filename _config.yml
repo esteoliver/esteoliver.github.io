@@ -40,16 +40,14 @@ plugins:
 paginate: 4
 paginate_path: /blog/page:num/
 
-collections:
-  blog:
-    output: true
-    permalink: /blog/:title
-  movies:
-    output: true
-    permalink: /blog/:title
-  books:
-    output: true
-    permalink: /blog/:title
+#collections_dir: content
+#collections:
+#  recommendations:
+#    output: true
+#    permalink: /recommendations/:title
+#  blog:
+#    output: true
+#    permalink: /blog/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.

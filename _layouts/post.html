@@ -7,8 +7,11 @@ layout: default
       <div class="thumbnail phone" style="background-image: url('{{ page.imgHeader }}')"></div>
 
       <div class="categories">
-        {%- for category in site.categories -%}
-        <a href="">{{ category[0] }}</a>
+        {%- for category in page.categories -%}
+        <a href="">{{ category }}</a>
+        {% unless forloop.last %}
+        <span>></span>
+        {% endunless %}
         {%- endfor -%}
       </div>
 
@@ -19,7 +22,7 @@ layout: default
       <p class="resume">{{ page.resume }}</p>
 
       <div class="tags">
-        {%- for tag in site.tags -%}
+        {%- for tag in page.tags -%}
         <a href="">{{ tag[0] }}</a>
         {%- endfor -%}
       </div>
