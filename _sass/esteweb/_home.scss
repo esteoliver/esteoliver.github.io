@@ -1,29 +1,60 @@
 @import './utils';
 
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 4rem 0;
 
   .name {
-    text-align: left;
     font-size: 2rem;
     font-weight: 200;
   }
 
-  .title {
-
+  /* Larger than tablet */
+  @media (min-width: 750px) {
+    & {
+      text-align: center;
+    }
   }
 
   nav {
+    box-sizing: border-box;
     margin-top: 4rem;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    overflow-x: auto;  /* Enable horizontal scrolling if content overflows */
+    white-space: nowrap; /* Prevent text from wrapping */
+    scrollbar-width: none;
+    padding: 1rem 3rem;
+
+    width: 100vw; /* Make it full width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw; /* Center it */
+    margin-right: -50vw;
+
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem 0.5rem;
+      display: block;
+      margin-right: 0;
+      margin-left: 0;
+      right: auto;
+      left: auto;
+      width: auto;
+    }
+
 
     a {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0 .5rem;
       background: rgba(#000000, 0.1);
-      padding: 0.5rem 2rem;
+      padding: 0.5rem 2.5rem;
       color: #000000;
-      border-radius: 16px;
+      border-radius: 3rem;
       transition: 0.3s;
 
       &:hover {
@@ -32,10 +63,6 @@
       }
     }
   }
-}
-
-.latest-posts nav {
-  padding: 2rem 0;
 }
 
 .latest-posts {
@@ -58,6 +85,12 @@
 
   scroll-snap-type: x mandatory; /* Enables snap scrolling */
 
+  nav {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+  }
+
   & > div {
     scroll-snap-align: center; /* Ensures items snap to center */
   }
@@ -73,11 +106,30 @@
 }
 
 .quick-intro {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  box-sizing: border-box;
+  width: 100vw; /* Make it full width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* Center it */
+  margin-right: -50vw;
+
   padding: 4rem;
   background: rgba(#000000, 0.1);
+
+  @media (min-width: 750px) {
+    padding: 4rem 10rem;
+  }
+
+  @media (min-width: 1000px) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 4rem;
+  }
+
 }
 
 section {

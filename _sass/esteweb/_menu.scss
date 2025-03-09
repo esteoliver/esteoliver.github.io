@@ -2,7 +2,30 @@ header.navbar {
   margin-bottom: 2rem;
 
   nav {
-    margin-top: 4rem;
+    box-sizing: border-box;
+    margin: 4rem auto 0;
+    text-align: left;
+    width: 85%;
+
+    a.avatar {
+      display: none;
+    }
+
+    a:not(.avatar) {
+      margin: 0 1.5rem 0 0;
+    }
+
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+      & {
+        text-align: center;
+        width: 100%;
+      }
+
+      a.avatar {
+        display: inline-block;
+      }
+    }
 
     a.avatar {
       position: absolute;
@@ -12,7 +35,7 @@ header.navbar {
 
     a:not(.avatar) {
       display: inline-block;
-      margin: 0 1.5rem;
+      // margin: 0 1.5rem;
       transition: 0.1s;
       text-decoration: none;
       color: #000000;
