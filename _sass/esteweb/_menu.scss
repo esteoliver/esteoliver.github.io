@@ -42,7 +42,7 @@ header.navbar {
       color: var(--text-color);
 
       &.active {
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid var(--text-color);
         color: var(--text-color);
       }
     }
