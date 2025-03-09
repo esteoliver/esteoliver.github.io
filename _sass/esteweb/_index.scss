@@ -75,7 +75,6 @@
   overflow-x: auto;  /* Enable horizontal scrolling if content overflows */
   white-space: nowrap; /* Prevent text from wrapping */
   gap: 10px; /* Optional: Adds spacing between images */
-  scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
 
   width: 100vw; /* Make it full width */
   position: relative;
@@ -86,6 +85,9 @@
   padding: 2rem;
 
   scroll-snap-type: x mandatory; /* Enables snap scrolling */
+
+  scrollbar-color: var(--text-color) var(--background-color);
+  scrollbar-width: thin;
 
   nav {
     padding: 2rem 0;

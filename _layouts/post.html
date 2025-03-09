@@ -1,37 +1,35 @@
 ---
 layout: default
 ---
-<div class="container">
-  <article class="post">
-    <header>
-      <div class="thumbnail phone" style="background-image: url('{{ page.imgHeader }}')"></div>
+<article class="post">
+  <header>
+    <div class="thumbnail phone" style="background-image: url('{{ page.imgHeader }}')"></div>
 
-      <div class="categories">
-        {%- for category in page.categories -%}
-        <a href="">{{ category }}</a>
-        {% unless forloop.last %}
-        <span>></span>
-        {% endunless %}
-        {%- endfor -%}
-      </div>
-
-      <h1 class="title">{{ page.title }}</h1>
-      <p class="subtitle">
-        <i>{{ page.date | date: "%B %d, %Y" }}</i>
-      </p>
-      <p class="resume">{{ page.resume }}</p>
-
-      <div class="tags">
-        {%- for tag in page.tags -%}
-        <a href="">{{ tag[0] }}</a>
-        {%- endfor -%}
-      </div>
-
-      <div class="thumbnail desktop" style="background-image: url('{{ page.imgHeader }}')"></div>
-    </header>
-
-    <div class="content">
-      {{ content }}
+    <div class="categories">
+      {%- for category in page.categories -%}
+      <a href="">{{ category }}</a>
+      {% unless forloop.last %}
+      <span>></span>
+      {% endunless %}
+      {%- endfor -%}
     </div>
-  </article>
-</div>
+
+    <h1 class="title">{{ page.title }}</h1>
+    <p class="subtitle">
+      <i>{{ page.date | date: "%B %d, %Y" }}</i>
+    </p>
+    <p class="resume">{{ page.resume }}</p>
+
+    <div class="tags">
+      {%- for tag in page.tags -%}
+      <a href="">{{ tag[0] }}</a>
+      {%- endfor -%}
+    </div>
+
+    <div class="thumbnail desktop" style="background-image: url('{{ page.imgHeader }}')"></div>
+  </header>
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
