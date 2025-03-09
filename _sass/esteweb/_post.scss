@@ -9,7 +9,8 @@
     margin-bottom: 5rem;
 
     .categories, .title, .subtitle, .resume, .tags {
-      background: #eeeeee;
+      background: var(--background-color);
+      color: var(--text-color);
       width: 90%;
       margin: 0 auto;
       padding: 0 2rem;
@@ -17,7 +18,8 @@
       position: relative;
 
       @media (min-width: 750px) {
-        background: #f9fbff;
+        background: var(--background-color);
+        color: var(--text-color);
         padding: 0 5rem;
       }
     }
@@ -76,7 +78,7 @@
 
   .categories {
     a {
-      color: #000000;
+      color: var(--text-color);
       text-transform: uppercase;
       font-size: 1.2rem;
     }
@@ -89,7 +91,7 @@
   .tags {
     a {
       margin-right: 1rem;
-      color: #000000;
+      color: var(--text-color);
       text-decoration: underline;
       text-transform: uppercase;
       font-size: 1.2rem;

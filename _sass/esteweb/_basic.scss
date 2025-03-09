@@ -1,6 +1,7 @@
 body {
   font-family: "DM Sans", sans-serif;
-  background: #f9fbff;
+  background: var(--background-color);
+  color: var(--text-color);
   padding-bottom: 15rem;
 }
 
@@ -9,5 +10,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #4b4b4b;
+  color: var(--text-color);
+}
+
+p {
+  color: var(--secondary-text-color);
+}
+
+hr {
+  border-color: var(--border-color);
+}
+
+button {
+  background: var(--primary-button-bg);
+  color: var(--primary-button-text);
+  border: 1px solid var(--border-color);
 }

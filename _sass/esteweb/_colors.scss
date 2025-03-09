@@ -1,23 +1,27 @@
-//$white-100: #fff;
-//$white-200: #f5f5f5;
-//$white-300: #c0c0c0;
-//
-//$black-200: #909090;
-//$black-300: #222222;
-//$black-400: #191919;
-//
-//$orange-200: #F6846D;
-//$orange-300: #F26B50;
-//
-//$green-300: #64F0BB;
-//
-//$blue-300: #415AD9;
-//
-//@mixin dark-background {
-//  background: $black-300;
-//  color: $black-200;
-//}
-//
-//.dark-background {
-//  @include dark-background;
-//}
+:root {
+  // Light Mode (default)
+  --background-color: #ffffff;
+  --text-color: #212529;
+  --secondary-text-color: #495057;
+  --border-color: #dee2e6;
+  --muted-color: #adb5bd;
+  --primary-button-bg: #343a40;
+  --primary-button-text: #ffffff;
+  --hover-primary-button-bg: #424242;
+  --hover-primary-button-text: #f8f9fa;
+}
+
+// Dark Mode: Override values
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #212529;
+    --text-color: #ffffff;
+    --secondary-text-color: #e9ecef;
+    --border-color: #495057;
+    --muted-color: #6c757d;
+    --primary-button-bg: #f8f9fa;
+    --primary-button-text: #212529;
+    --hover-primary-button-bg: #adb5bd;
+    --hover-primary-button-text: #212529;
+  }
+}

@@ -53,15 +53,15 @@
     a {
       display: inline-block;
       margin: 0 .5rem;
-      background: rgba(#000000, 0.1);
+      background: var(--primary-button-bg);
+      color: var(--primary-button-text);
       padding: 0.5rem 2.5rem;
-      color: #000000;
       border-radius: 3rem;
       transition: 0.3s;
 
       &:hover {
-        background: rgba(#000000, 0.6);
-        color: #ffffff;
+        background: var(--hover-primary-button-bg);
+        color: var(--hover-primary-button-text);
       }
     }
   }
@@ -102,7 +102,6 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #ccc; /* Scrollbar color */
     border-radius: 10px;
   }
 }
@@ -115,9 +114,7 @@
   right: 50%;
   margin-left: -50vw; /* Center it */
   margin-right: -50vw;
-
   padding: 4rem;
-  background: rgba(#000000, 0.1);
 
   @media (min-width: 750px) {
     padding: 4rem 10rem;
