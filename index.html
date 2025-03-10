@@ -11,6 +11,10 @@ layout: default
         {% for category in site.categories %}
             <a href="">{{ category[0] }}</a>
         {% endfor %}
+
+        {% for collection in site.collections %}
+            <a href="">{{ collection.label }}</a>
+        {% endfor %}
     </nav>
 </div>
 
